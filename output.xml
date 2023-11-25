@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231125 17:09:00.326" rpa="false" schemaversion="4">
+<suite id="s1" name="Learnign-Robotframework" source="C:\Users\E7250\Ohjelmistokehitys_teknologiat\Seminaarityo_robotframework\learnign-robotframework">
+<suite id="s1-s1" name="Ultimateqa Tests" source="C:\Users\E7250\Ohjelmistokehitys_teknologiat\Seminaarityo_robotframework\learnign-robotframework\ultimateqa_tests">
+<suite id="s1-s1-s1" name="Buttons" source="C:\Users\E7250\Ohjelmistokehitys_teknologiat\Seminaarityo_robotframework\learnign-robotframework\ultimateqa_tests\buttons.robot">
+<test id="s1-s1-s1-t1" name="Open browser and test page content" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231125 17:09:00.728" level="INFO">Opening browser 'Chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20231125 17:09:00.728" endtime="20231125 17:09:05.424"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Click button using ClassName</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231125 17:09:05.777" level="INFO">Current page contains text 'Click button using ClassName'.</msg>
+<status status="PASS" starttime="20231125 17:09:05.598" endtime="20231125 17:09:05.777"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231125 17:09:05.778" endtime="20231125 17:09:08.596"/>
+</kw>
+<status status="PASS" starttime="20231125 17:09:00.728" endtime="20231125 17:09:08.596"/>
+</test>
+<test id="s1-s1-s1-t2" name="Test to click button Click Me" line="19">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231125 17:09:08.596" level="INFO">Opening browser 'Chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20231125 17:09:08.596" endtime="20231125 17:09:13.162"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${CLICKMEBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231125 17:09:13.183" level="INFO">Clicking button '(//button)[contains(text(), "Click Me")]'.</msg>
+<status status="PASS" starttime="20231125 17:09:13.180" endtime="20231125 17:09:13.538"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231125 17:09:17.539" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231125 17:09:13.538" endtime="20231125 17:09:17.539"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>about to submit is not secure</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231125 17:09:17.577" level="INFO">Current page contains text 'about to submit is not secure'.</msg>
+<status status="PASS" starttime="20231125 17:09:17.539" endtime="20231125 17:09:17.577"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231125 17:09:21.581" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231125 17:09:17.581" endtime="20231125 17:09:21.581"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231125 17:09:21.581" endtime="20231125 17:09:24.337"/>
+</kw>
+<status status="PASS" starttime="20231125 17:09:08.596" endtime="20231125 17:09:24.337"/>
+</test>
+<test id="s1-s1-s1-t3" name="Test to click link Click Me!" line="27">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231125 17:09:24.337" level="INFO">Opening browser 'Chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20231125 17:09:24.337" endtime="20231125 17:09:28.534"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>locator=link:Click me using this link text!</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20231125 17:09:28.556" level="INFO">Clicking link 'link:Click me using this link text!'.</msg>
+<status status="PASS" starttime="20231125 17:09:28.555" endtime="20231125 17:09:28.907"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231125 17:09:32.908" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231125 17:09:28.907" endtime="20231125 17:09:32.908"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Link success</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231125 17:09:32.933" level="INFO">Current page contains text 'Link success'.</msg>
+<status status="PASS" starttime="20231125 17:09:32.908" endtime="20231125 17:09:32.933"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231125 17:09:36.934" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231125 17:09:32.933" endtime="20231125 17:09:36.934"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231125 17:09:36.934" endtime="20231125 17:09:39.316"/>
+</kw>
+<status status="PASS" starttime="20231125 17:09:24.337" endtime="20231125 17:09:39.316"/>
+</test>
+<test id="s1-s1-s1-t4" name="Test to click link Ckick Me looks like button" line="35">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231125 17:09:39.316" level="INFO">Opening browser 'Chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20231125 17:09:39.316" endtime="20231125 17:09:44.882"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${CLICKMELINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20231125 17:09:44.893" level="INFO">Clicking link '(//a)[contains(text(), "Click Me")]'.</msg>
+<status status="PASS" starttime="20231125 17:09:44.890" endtime="20231125 17:09:45.357"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231125 17:09:49.487" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231125 17:09:45.486" endtime="20231125 17:09:49.487"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${URL}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20231125 17:09:49.487" level="INFO">${URL} = https://ultimateqa.com/button-success</msg>
+<status status="PASS" starttime="20231125 17:09:49.487" endtime="20231125 17:09:49.487"/>
+</kw>
+<kw name="Should Match" library="BuiltIn">
+<arg>${URL}</arg>
+<arg>https://ultimateqa.com/button-success</arg>
+<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
+<status status="PASS" starttime="20231125 17:09:49.487" endtime="20231125 17:09:49.487"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Button success</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231125 17:09:49.530" level="INFO">Current page contains text 'Button success'.</msg>
+<status status="PASS" starttime="20231125 17:09:49.487" endtime="20231125 17:09:49.530"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231125 17:09:53.531" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231125 17:09:49.530" endtime="20231125 17:09:53.531"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231125 17:09:53.531" endtime="20231125 17:09:55.899"/>
+</kw>
+<status status="PASS" starttime="20231125 17:09:39.316" endtime="20231125 17:09:55.899"/>
+</test>
+<doc>A test suite for testing buttons</doc>
+<status status="PASS" starttime="20231125 17:09:00.364" endtime="20231125 17:09:55.899"/>
+</suite>
+<status status="PASS" starttime="20231125 17:09:00.364" endtime="20231125 17:09:55.899"/>
+</suite>
+<status status="PASS" starttime="20231125 17:09:00.326" endtime="20231125 17:09:55.912"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Learnign-Robotframework">Learnign-Robotframework</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Ultimateqa Tests">Learnign-Robotframework.Ultimateqa Tests</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="Buttons">Learnign-Robotframework.Ultimateqa Tests.Buttons</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
