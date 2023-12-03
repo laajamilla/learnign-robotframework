@@ -12,7 +12,7 @@ ${BROWSER}    Chrome
 *** Test Cases ***
 Testing dropdown list
     Open Browser To Test Page
-    Select Opel    Opel
+    Select Opel    Volvo
     Selection successfull
     [Teardown]    Close Browser
 
@@ -24,7 +24,8 @@ Open Browser To Test Page
 
 Select Opel
     [Arguments]    ${LISTVALUE}
-    Select from list by value    xpath://select    ${LISTVALUE}
+    Select from list by value    //select    ${LISTVALUE}
+    Sleep    4 seconds
 
 Selection successfull
-    List Selection Should Be    //select    Opel
+    List Selection Should Be    //select    Volvo
